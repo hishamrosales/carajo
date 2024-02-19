@@ -28,6 +28,20 @@ namespace PV2
             {
                 this.LblName.Text = "La caja está vacía";
             }
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            if (this.CmbCarreras.Text != string.Empty)
+            {
+                this.LblCarrera.Text = this.CmbCarreras.Text;
+            }
+            else
+            {
+                this.LblCarrera.Text = "La combo box esta vacía";
+            }
         }
     }
 }
